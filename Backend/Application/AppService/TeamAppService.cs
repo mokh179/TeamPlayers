@@ -35,15 +35,14 @@ namespace Application.AppService
             return result;
         }
 
-        public APIResult Delete(int id)
+        public APIResult Delete(TeamDTO team)
         {
             APIResult result = new APIResult() { Message = "Error", TypeMessage = Common.Enums.typeMessage.Error };
             try
             {
-                var obj = _Theunitofwork.Teams.GetByID(id).Result;
-                if (obj != null)
+                if (team != null)
                 {
-                    _Theunitofwork.Teams.Delete(obj);
+                    _Theunitofwork.Teams.Delete(_teamMapper.Map(team));
                     if (_Theunitofwork.complete() > default(int))
                         result.TypeMessage = Common.Enums.typeMessage.Ok; result.Message = "Deleted Sucessfully";
 
@@ -99,7 +98,7 @@ namespace Application.AppService
             TeamDTO team = new TeamDTO();
             try
             {
-                var teamobj = await _Theunitofwork.Teams.GetByID(id);
+                var teamobj = await _Theunitofwork.Teams.find(x => x.teamId == id, new[] {  "Country" });
                 team = _teamMapper.Map(teamobj);
 
             }

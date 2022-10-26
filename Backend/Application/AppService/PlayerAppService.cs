@@ -35,15 +35,14 @@ namespace Application.AppService
             return result;
         }
 
-        public APIResult Delete(int id)
+        public APIResult Delete(PlayerDTO player)
         {
             APIResult result = new APIResult() { Message = "Error", TypeMessage = Common.Enums.typeMessage.Error };
             try
             {
-                var obj = _Theunitofwork.Players.GetByID(id).Result;
-                if (obj != null)
+                if (player != null)
                 {
-                    _Theunitofwork.Players.Delete(obj);
+                    _Theunitofwork.Players.Delete(_playerMapper.Map(player));
                     if (_Theunitofwork.complete() > default(int))
                         result.TypeMessage = Common.Enums.typeMessage.Ok; result.Message = "Deleted Sucessfully";
 
@@ -58,7 +57,7 @@ namespace Application.AppService
             return result;
         }
 
-        public APIResult EditBook(PlayerDTO book)
+        public APIResult EditPlayer(PlayerDTO book)
         {
             APIResult result = new APIResult() { Message = "Error", TypeMessage = Common.Enums.typeMessage.Error };
             try
@@ -80,7 +79,7 @@ namespace Application.AppService
             List<PlayerDTO> PlayersDTOs = new List<PlayerDTO>();
             try
             {
-                var PlayersList = await _Theunitofwork.Players.getAll();
+                var PlayersList = await _Theunitofwork.Players.getAll(new []{ "Team","Country"});
                 foreach (var item in PlayersList)
                 {
                     PlayersDTOs.Add(_playerMapper.Map(item));
@@ -99,7 +98,7 @@ namespace Application.AppService
             PlayerDTO player = new PlayerDTO();
             try
             {
-                var playerobj = await _Theunitofwork.Players.GetByID(id);
+                var playerobj = await _Theunitofwork.Players.find(x=>x.playerId==id, new[] { "Team", "Country" });
                 player = _playerMapper.Map(playerobj);
                
             }

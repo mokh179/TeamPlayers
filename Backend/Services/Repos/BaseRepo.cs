@@ -2,6 +2,8 @@
 
 
 
+using System.Text.RegularExpressions;
+
 namespace Services.Repos
 {
     public class BaseRepo<T> : IBase<T> where T : class
@@ -29,9 +31,13 @@ namespace Services.Repos
             return query.Where(match).ToList();
         }
 
-        public async Task<IEnumerable<T>> getAll()
+        public async Task<IEnumerable<T>> getAll(string[] Includes = null)
         {
-            return await _db.Set<T>().ToListAsync();
+            IQueryable<T> query = _db.Set<T>();
+            if (Includes != null)
+                foreach (var item in Includes)
+                    query = query.Include(item);
+            return await query.ToListAsync();
         }
 
         public async Task<T> GetByID(int Id)
@@ -64,9 +70,6 @@ namespace Services.Repos
         {
             return _db.Set<T>().Count(match);
         }
-        //T Update(T entity);
-        //void Delete(T entity);
-        //T Attach(T entity);
-        //int Count(Expression<Func<T, bool>> match);
+        
     }
 }

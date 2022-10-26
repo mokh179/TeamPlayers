@@ -10,8 +10,8 @@ namespace IApplication.IAppService
     {
         public Task<List<PlayerDTO>> GetAllPlayers();
         public Task<PlayerDTO> GetbyId(int id);
-        public APIResult EditBook(PlayerDTO player);
+        public APIResult EditPlayer(PlayerDTO player);
         public Task<APIResult> Create(PlayerDTO player);
-        public APIResult Delete(int id);
+        public APIResult Delete(PlayerDTO player);
     }
 }

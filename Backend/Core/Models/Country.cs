@@ -9,6 +9,6 @@ namespace Core.Models
     public class Country
     {
         public int countryId { get; set; }
-        public int countryName { get; set; }
+        public string countryName { get; set; }
     }
 }

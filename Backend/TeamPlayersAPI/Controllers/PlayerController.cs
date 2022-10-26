@@ -31,19 +31,19 @@ namespace TeamPlayersAPI.Controllers
             return Ok(await _player.GetbyId(id));
         }
 
-        [HttpPost("EditBook")]
+        [HttpPost("EditPlayer")]
         public IActionResult Edit(PlayerDTO player)
         {
             if (player != null)
-                return Ok(_player.EditBook(player));
+                return Ok(_player.EditPlayer(player));
             return BadRequest(player);
         }
 
         [HttpDelete("DeletePlayer/{playerId}")]
-        public IActionResult Delete(int playerId)
+        public IActionResult Delete(PlayerDTO player)
         {
-            if (playerId > 0)
-                return Ok(_player.Delete(playerId));
+            if (!ModelState.IsValid)
+                return Ok(_player.Delete(player));
             return BadRequest();
         }
     }

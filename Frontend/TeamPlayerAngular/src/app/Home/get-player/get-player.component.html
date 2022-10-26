@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>
+    {{player.playerName}} Details
+  </h2>
+</div>
+
+<div class="card ">
+  <div class="container">
+
+    <div class="card-body container">
+      <Span>Player Name : </Span> {{player.playerName}} <br>
+      <Span>Date Of Birth : </Span> {{player.dateofBirth|date}} <br>
+      <Span>Country : </Span> {{player.countryName}} <br>
+      <Span>Team : </Span> {{player.teamName}} <br>
+    </div>
+  </div>
+</div>
+
+<a class="btn btn-primary mb-2" routerLink="/Players">Back to Home</a>

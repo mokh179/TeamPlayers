@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "TeamPlayersAPI/1.0.0": {
         "dependencies": {
+          "Application": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
@@ -761,6 +762,21 @@
           }
         }
       },
+      "Application/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "IApplication": "1.0.0",
+          "Services": "1.0.0"
+        },
+        "runtime": {
+          "Application.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "runtime": {
+          "Common.dll": {}
+        }
+      },
       "Core/1.0.0": {
         "dependencies": {
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.3",
@@ -772,10 +788,20 @@
           "Core.dll": {}
         }
       },
+      "IApplication/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0",
+          "Core": "1.0.0"
+        },
+        "runtime": {
+          "IApplication.dll": {}
+        }
+      },
       "Services/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
         },
         "runtime": {
@@ -1378,7 +1404,22 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IApplication/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

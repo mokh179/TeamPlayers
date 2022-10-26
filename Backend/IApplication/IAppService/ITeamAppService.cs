@@ -12,6 +12,6 @@ namespace IApplication.IAppService
         public Task<TeamDTO> GetbyId(int id);
         public APIResult EditTeam(TeamDTO team);
         public Task<APIResult> Create(TeamDTO team);
-        public APIResult Delete(int id);
+        public APIResult Delete(TeamDTO team);
     }
 }

@@ -12,12 +12,12 @@ namespace Application.Mapper
     {
         public PlayerDTO Map(Player player)
         {
-            return new PlayerDTO() { playerName=player.playerName,dateofBirth=player.dateofBirth,teamId=player.teamId,countryId=player.countryId};
+            return new PlayerDTO() { playerId=player.playerId,playerName=player.playerName,dateofBirth=player.dateofBirth,teamId=player.teamId,countryId=player.countryId,teamName=player.Team.teamName,countryName=player.Country.countryName};
         }
 
         public Player Map(PlayerDTO player)
         {
-            return new Player() { playerName = player.playerName, dateofBirth = player.dateofBirth, teamId = player.teamId, countryId = player.countryId };
+            return new Player() { playerId = player.playerId, playerName = player.playerName, dateofBirth = player.dateofBirth, teamId = player.teamId, countryId = player.countryId };
         }
     }
 }

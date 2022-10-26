@@ -30,8 +30,9 @@ namespace Services.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("countryId"), 1L, 1);
 
-                    b.Property<int>("countryName")
-                        .HasColumnType("int");
+                    b.Property<string>("countryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("countryId");
 

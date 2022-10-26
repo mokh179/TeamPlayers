@@ -13,7 +13,7 @@ namespace Core.Models
         public int teamId { get; set; }
         [ForeignKey("country")]
         public int countryId { get; set; }
-        public Team team { get; set; }
-         public Country country { get; set; }
+        public Team Team { get; set; }
+         public Country Country { get; set; }
     }
 }
