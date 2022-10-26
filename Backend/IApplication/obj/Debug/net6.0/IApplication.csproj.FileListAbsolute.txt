@@ -1,0 +1,12 @@
+D:\ITI\TeamPlayerSimpleProject\IApplication\bin\Debug\net6.0\IApplication.deps.json
+D:\ITI\TeamPlayerSimpleProject\IApplication\bin\Debug\net6.0\IApplication.dll
+D:\ITI\TeamPlayerSimpleProject\IApplication\bin\Debug\net6.0\IApplication.pdb
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.csproj.AssemblyReference.cache
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.AssemblyInfoInputs.cache
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.AssemblyInfo.cs
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.csproj.CoreCompileInputs.cache
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.dll
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\refint\IApplication.dll
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\IApplication.pdb
+D:\ITI\TeamPlayerSimpleProject\IApplication\obj\Debug\net6.0\ref\IApplication.dll
