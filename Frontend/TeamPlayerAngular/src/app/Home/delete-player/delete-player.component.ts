@@ -16,7 +16,9 @@ export class DeletePlayerComponent implements OnInit {
   ngOnInit(): void {
     this.ac.params.subscribe(i=>{
       this.playerService.getbyID(i.id).subscribe(a=>{
+
         this.player=a;
+        console.log(this.player)
       })
     })
   }

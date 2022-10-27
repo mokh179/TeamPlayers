@@ -17,11 +17,11 @@
         <td>{{player.teamName}}</td>
         <td>{{player.dateofBirth}}</td>
         <td>
-          <button class="btn btn-primary mx-1" [routerLink]="['/Player/details',player.playerid]"><i class="fa fa-bars"
+          <button class="btn btn-primary mx-1" [routerLink]="['/Player/details',player.playerId]"><i class="fa fa-bars"
               aria-hidden="true"></i></button>
-          <button class="btn btn-warning mx-1" [routerLink]="['/Player/edit',player.playerid]"><i class="fa fa-edit"
+          <button class="btn btn-warning mx-1" [routerLink]="['/Player/edit',player.playerId]"><i class="fa fa-edit"
               aria-hidden="true"></i></button>
-          <button class="btn btn-danger" [routerLink]="['/Player/Delete',player.playerid]"><i class="fa fa-trash"
+          <button class="btn btn-danger" [routerLink]="['/Player/Delete',player.playerId]"><i class="fa fa-trash"
               aria-hidden="true"></i></button>
         </td>
       </tr>

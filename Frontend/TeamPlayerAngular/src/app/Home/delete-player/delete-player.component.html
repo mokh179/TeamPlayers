@@ -1,12 +1,20 @@
 <div class="container">
-    <div class="form-group">
-        <label for="Name">Name</label>
-        <input type="text" [(ngModel)]="player.playerName" class="form-control" name="Name"  id="Name" aria-describedby="helpId" placeholder="Name" disabled>
-        <input type="text" [(ngModel)]="player.teamName" class="form-control" name="Name"  id="teamName" aria-describedby="helpId" placeholder="Name" disabled>
-        <input type="text" [(ngModel)]="player.countryName" class="form-control" name="Name"  id="countryName" aria-describedby="helpId" placeholder="Name" disabled>
-      </div>
-      <br>
-      <div class="form-group text-center">
-          <button class="btn btn-danger" (click)="delete()">Remove</button>
-      </div>
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" [(ngModel)]="player.playerName" class="form-control" name="Name" id="Name"
+      aria-describedby="helpId" placeholder="Name" disabled>
+    <label for="Team">Team</label>
+    <input type="text" [(ngModel)]="player.teamName" class="form-control" name="Team" id="teamName"
+      aria-describedby="helpId" placeholder="Name" disabled>
+    <label for="Team">Country</label>
+    <input type="text" [(ngModel)]="player.countryName" class="form-control" name="Country" id="countryName"
+      aria-describedby="helpId" placeholder="Name" disabled>
+    <label for="Team">Date Of Birth</label>
+    <input type="text" [(ngModel)]="player.dateofBirth" class="form-control" name="DateOfBirth" id="countryName"
+      aria-describedby="helpId" placeholder="Name" disabled>
   </div>
+  <br>
+  <div class="form-group text-center">
+    <button class="btn btn-danger" (click)="delete()">Remove</button>
+  </div>
+</div>

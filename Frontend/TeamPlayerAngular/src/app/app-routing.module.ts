@@ -11,11 +11,11 @@ import { AdminGuard } from './_Guard/admin.guard';
 const routes: Routes = [
   {path:"login",component:LoginComponent},
   {path:"Players",component:IndexComponent,canActivate:[LoginGuardGuard]},
-   {path:"",redirectTo:"Players",pathMatch:'full',canActivate:[LoginGuardGuard]},
+  {path:"",redirectTo:"login",pathMatch:'full'},
   {path:"Add",component:CreatePlayerComponent ,canActivate:[LoginGuardGuard]},
   {path:"Player/details/:id",component:GetPlayerComponent,canActivate:[AdminGuard]},
-  {path:"Player/edit/:id",component:EditPlayerComponent,canActivate:[LoginGuardGuard]},
-  {path:"Player/Delete/:id",component:DeletePlayerComponent,canActivate:[LoginGuardGuard]},
+  {path:"Player/edit/:id",component:EditPlayerComponent,canActivate:[AdminGuard]},
+  {path:"Player/Delete/:id",component:DeletePlayerComponent,canActivate:[AdminGuard]},
 ];
 
 @NgModule({

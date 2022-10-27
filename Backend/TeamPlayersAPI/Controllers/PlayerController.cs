@@ -18,7 +18,7 @@ namespace TeamPlayersAPI.Controllers
         {
             return Ok(await _player.GetAllPlayers());
         }
-        [Authorize,HttpPost("AddPlayer")]
+        [HttpPost("AddPlayer")]
         public async Task<IActionResult> Create(PlayerDTO player)
         {
             if (!ModelState.IsValid)
@@ -26,13 +26,13 @@ namespace TeamPlayersAPI.Controllers
             return Ok(await _player.Create(player));
         }
 
-        [Authorize, HttpGet("Getplayer/{id}")]
+        [HttpGet("Getplayer/{id}")]
         public async Task<IActionResult> Getplayer(int id)
         {
             return Ok(await _player.GetbyId(id));
         }
 
-        [Authorize, HttpPost("EditPlayer")]
+        [ HttpPut("EditPlayer")]
         public IActionResult Edit(PlayerDTO player)
         {
             if (player != null)
@@ -40,12 +40,12 @@ namespace TeamPlayersAPI.Controllers
             return BadRequest(player);
         }
 
-        [Authorize, HttpPost("DeletePlayer")]
+        [ HttpPost("DeletePlayer")]
         public IActionResult Delete(PlayerDTO player)
         {
             if (!ModelState.IsValid)
-                return Ok(_player.Delete(player));
-            return BadRequest();
+                return BadRequest(player);
+            return Ok(_player.Delete(player));
         }
     }
 }

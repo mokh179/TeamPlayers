@@ -10,6 +10,7 @@ namespace Core.Interfaces
     {
         IBase<Player> Players { get; }
         IBase<Team> Teams { get; }
+        IBase<Country> Countries { get; }
         int complete();
     }
 }

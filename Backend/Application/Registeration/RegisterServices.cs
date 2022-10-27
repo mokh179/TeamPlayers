@@ -16,6 +16,7 @@ namespace Application.Registeration
             _srv.AddScoped<ITeamMapper,TeamMapper>();
             _srv.AddScoped<IPlayerAppService, PlayerAppService>();
             _srv.AddScoped<ITeamAppService, TeamAppService>();
+            _srv.AddScoped<ICountryAppService, CountryAppService>();
             _srv.AddScoped<IGenerateToken, GenerateToken>();
             _srv.AddScoped<IRegisterAuthenticate, Register>();
             _srv.AddScoped<ILoginAuthenticate, Login>();

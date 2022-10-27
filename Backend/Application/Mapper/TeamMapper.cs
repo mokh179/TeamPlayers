@@ -12,7 +12,7 @@ namespace Application.Mapper
     {
         public TeamDTO Map(Team team)
         {
-            return new TeamDTO() { coachName = team.coachName, foundedIn = team.foundedIn, nationality = team.nationality, teamName = team.teamName };
+            return new TeamDTO() { teamId=team.teamId,coachName = team.coachName, foundedIn = team.foundedIn, nationality = team.nationality, teamName = team.teamName };
         }
 
         public Team Map(TeamDTO team)

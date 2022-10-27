@@ -17,6 +17,7 @@ namespace Services.Repos
         public IBase<Team> Teams => new BaseRepo<Team>(_db);
 
         public IBase<User> Users => new BaseRepo<User>(_db);
+        public IBase<Country> Countries => new BaseRepo<Country>(_db);
 
         public int complete()
         {

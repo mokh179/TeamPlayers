@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TeamteamsAPI.Controllers
@@ -18,7 +19,7 @@ namespace TeamteamsAPI.Controllers
         {
             return Ok(await _team.GetAllTeams());
         }
-        [HttpPost("AddTeam")]
+        [Authorize(Roles = "Admin"), HttpPost("AddTeam")]
         public async Task<IActionResult> Create(TeamDTO team)
         {
             if (!ModelState.IsValid)
@@ -26,13 +27,13 @@ namespace TeamteamsAPI.Controllers
             return Ok(await _team.Create(team));
         }
 
-        [HttpGet("Getteam/{id}")]
+        [Authorize(Roles = "Admin"), HttpGet("Getteam/{id}")]
         public async Task<IActionResult> Getteam(int id)
         {
             return Ok(await _team.GetbyId(id));
         }
 
-        [HttpPost("Editteam")]
+        [Authorize(Roles = "Admin"), HttpPost("Editteam")]
         public IActionResult Edit(TeamDTO team)
         {
             if (team != null)
@@ -40,11 +41,11 @@ namespace TeamteamsAPI.Controllers
             return BadRequest(team);
         }
 
-        [HttpDelete("Deleteteam")]
+        [Authorize(Roles ="Admin"),HttpDelete("Deleteteam")]
         public IActionResult Delete(TeamDTO team)
         {
-            if (!ModelState.IsValid)
-                return Ok(_team.Delete(team));
+            if (ModelState.IsValid)
+               return Ok(_team.Delete(team));
             return BadRequest();
         }
     }
