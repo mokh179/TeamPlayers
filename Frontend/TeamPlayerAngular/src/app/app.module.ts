@@ -10,6 +10,7 @@ import { CreatePlayerComponent } from './Home/create-player/create-player.compon
 import { EditPlayerComponent } from './Home/edit-player/edit-player.component';
 import { GetPlayerComponent } from './Home/get-player/get-player.component';
 import { DeletePlayerComponent } from './Home/delete-player/delete-player.component';
+import { LoginComponent } from './Account/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DeletePlayerComponent } from './Home/delete-player/delete-player.compon
     CreatePlayerComponent,
     EditPlayerComponent,
     GetPlayerComponent,
-    DeletePlayerComponent
+    DeletePlayerComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

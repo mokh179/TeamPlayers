@@ -89,10 +89,13 @@ D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\EntityFra
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Humanizer.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -104,7 +107,9 @@ D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\TeamPlayersAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll

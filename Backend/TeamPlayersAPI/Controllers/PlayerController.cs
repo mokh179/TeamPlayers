@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TeamPlayersAPI.Controllers
@@ -17,7 +18,7 @@ namespace TeamPlayersAPI.Controllers
         {
             return Ok(await _player.GetAllPlayers());
         }
-        [HttpPost]
+        [Authorize,HttpPost("AddPlayer")]
         public async Task<IActionResult> Create(PlayerDTO player)
         {
             if (!ModelState.IsValid)
@@ -25,13 +26,13 @@ namespace TeamPlayersAPI.Controllers
             return Ok(await _player.Create(player));
         }
 
-        [HttpGet("Getplayer/{id}")]
+        [Authorize, HttpGet("Getplayer/{id}")]
         public async Task<IActionResult> Getplayer(int id)
         {
             return Ok(await _player.GetbyId(id));
         }
 
-        [HttpPost("EditPlayer")]
+        [Authorize, HttpPost("EditPlayer")]
         public IActionResult Edit(PlayerDTO player)
         {
             if (player != null)
@@ -39,7 +40,7 @@ namespace TeamPlayersAPI.Controllers
             return BadRequest(player);
         }
 
-        [HttpDelete("DeletePlayer/{playerId}")]
+        [Authorize, HttpPost("DeletePlayer")]
         public IActionResult Delete(PlayerDTO player)
         {
             if (!ModelState.IsValid)

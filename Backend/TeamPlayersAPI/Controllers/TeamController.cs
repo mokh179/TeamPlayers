@@ -18,7 +18,7 @@ namespace TeamteamsAPI.Controllers
         {
             return Ok(await _team.GetAllTeams());
         }
-        [HttpPost]
+        [HttpPost("AddTeam")]
         public async Task<IActionResult> Create(TeamDTO team)
         {
             if (!ModelState.IsValid)
@@ -40,7 +40,7 @@ namespace TeamteamsAPI.Controllers
             return BadRequest(team);
         }
 
-        [HttpDelete("Deleteteam/{teamId}")]
+        [HttpDelete("Deleteteam")]
         public IActionResult Delete(TeamDTO team)
         {
             if (!ModelState.IsValid)

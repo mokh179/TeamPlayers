@@ -4,4 +4,5 @@ global using Newtonsoft.Json;
 global using Services.Context;
 global using IApplication.IAppService;
 global using Common.DTOs;
+global using Common.DTOs.AuthenticationDTO;
 

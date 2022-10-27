@@ -16,7 +16,9 @@ D:\ITI\TeamPlayerSimpleProject\Services\obj\Debug\net6.0\ref\Services.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Services.deps.json
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Services.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Services.pdb
+D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Common.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Core.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Common.pdb
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\bin\Debug\net6.0\Core.pdb
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
 D:\ITI\TeamPlayerSimpleProject\Backend\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig

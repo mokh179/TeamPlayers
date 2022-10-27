@@ -1,1 +1,44 @@
-<p>create-player works!</p>
+<div class="container">
+  <form #PlayerForm="ngForm" novalidate (ngSubmit)="Save()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Player Name</label>
+
+      <input type="text" class="form-control" name="PlayerName" placeholder="Player Name"
+        [(ngModel)]="player.playerName" #PlayerName="ngModel" required>
+      <small id="DeptHelp" class="form-text text-muted" *ngIf="PlayerName.errors?.required">Please This Field
+        Required</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Player Name</label>
+
+      <input type="text" class="form-control" name="DateOfBirth" placeholder="DateOfBirth"
+        [(ngModel)]="player.dateofBirth" #dateofBirth="ngModel" required>
+      <small id="DeptHelp" class="form-text text-muted" *ngIf="dateofBirth.errors?.required">Please This Field
+        Required</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Player Name</label>
+
+      <input type="text" class="form-control" name="DateOfBirth" placeholder="DateOfBirth"
+        [(ngModel)]="player.dateofBirth" #dateofBirth="ngModel" required>
+      <small id="DeptHelp" class="form-text text-muted" *ngIf="dateofBirth.errors?.required">Please This Field
+        Required</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Player Name</label>
+
+      <select class="select-option form-control con" name="city" [(ngModel)]="player.teamId">
+        <option value="0"> Select City </option>
+        <option class='option' *ngFor="let team of Teams " [value]="team.teamId">{{team.teamName}}</option>
+      </select>
+    </div>
+    <br>
+
+    <div class="container">
+
+      <button type="submit" class="btn btn-primary mb-2">Add</button>
+    </div>
+
+  </form>
+
+</div>

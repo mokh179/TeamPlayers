@@ -1,11 +1,14 @@
-D:\ITI\TeamPlayerSimpleProject\Backend\Common\bin\Debug\net6.0\Common.deps.json
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\bin\Debug\net6.0\Common.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\Common\bin\Debug\net6.0\Common.deps.json
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\bin\Debug\net6.0\Common.pdb
+D:\ITI\TeamPlayerSimpleProject\Backend\Common\bin\Debug\net6.0\Core.dll
+D:\ITI\TeamPlayerSimpleProject\Backend\Common\bin\Debug\net6.0\Core.pdb
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.csproj.CopyComplete
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\refint\Common.dll
 D:\ITI\TeamPlayerSimpleProject\Backend\Common\obj\Debug\net6.0\Common.pdb

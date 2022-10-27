@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-6 container">
+      <div class="container">
+          <h3>Login</h3>
+      </div>
+    
+    <form #loginForm="ngForm">
+
+
+      <div *ngIf="invalidLogin" class="alert alert-danger"> Invalid Username or password</div>
+      <div *ngIf="ExpiredLogin" class="alert alert-danger"> Session Expired Please Login Again</div>
+
+      <br>
+      <div class="form-group">
+
+        <input #username="ngModel" name="username" [(ngModel)]="loginDTO.username" required class="form-control inpts"
+          placeholder="UserName" type="text" autofocus />
+        <span *ngIf="username.errors?.required&&username.touched ">*</span>
+
+      </div>
+      <div class="form-group">
+        <input #password="ngModel" name="password" [(ngModel)]="loginDTO.password" required class="form-control inpts"
+          placeholder="Password" type="password" />
+        <span *ngIf="password.errors?.required&&password.touched ">*</span>
+
+      </div>
+      <br>
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary" (click)="Save()">Login</button>
+      </div>
+
+
+
+    </form>
+  </div>
+
+
+
+</div>

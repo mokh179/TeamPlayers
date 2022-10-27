@@ -13,17 +13,16 @@ export class PlayerServiceService {
   }
 
   addPlayer(player:PlayerDTO){
-    return this.http.post("https://localhost:7086/api/Departments/AddDepartment",player)
+    return this.http.post("https://localhost:7086/api/Player/AddPlayer",player)
   }
 getbyID(id:number){
-  return this.http.get<PlayerDTO>("https://localhost:7086/api/Departments/Department/"+id)
+  return this.http.get<PlayerDTO>("https://localhost:7086/api/Player/AddPlayer"+id)
 }
 edit(player:PlayerDTO){
-return this.http.put("https://localhost:7086/api/Departments/EditDepartment/",player)
+return this.http.put("https://localhost:7086/api/Player/EditPlayer",player)
 }
 deletePlayer(player:PlayerDTO){
-  return this.http.post("https://localhost:7086/api/Departments/Remove",player)
-
+  return this.http.post("https://localhost:7086/api/api/Player/DeletePlayer",player)
 }
  
 }
